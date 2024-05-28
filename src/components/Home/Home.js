@@ -1,9 +1,10 @@
 import React from 'react';
-import { Carousel, Button } from 'react-bootstrap'; // Ensure you have imported necessary components
+import { Carousel, Button } from 'react-bootstrap';
+import './Home.css';
 
 function Home() {
   return (
-    <div>  {/* This is the single parent element wrapping all the child elements */}
+    <div className="home-container">
       <Carousel>
         <Carousel.Item>
           <img
@@ -16,7 +17,6 @@ function Home() {
             <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
           </Carousel.Caption>
         </Carousel.Item>
-
         <Carousel.Item>
           <img
             className="d-block w-100"
@@ -28,7 +28,6 @@ function Home() {
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </Carousel.Caption>
         </Carousel.Item>
-
         <Carousel.Item>
           <img
             className="d-block w-100"
@@ -41,7 +40,6 @@ function Home() {
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
-
       <div className="text-center mt-4">
         <Button variant="primary">Get a Quote</Button>
       </div>
